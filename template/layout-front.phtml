@@ -92,9 +92,6 @@ $breadcrumbs = $this->breadcrumb(
         )
     ))
 );
-
-// Load google font
-$this->headLink()->appendStylesheet('https://fonts.googleapis.com/css?family=Raleway:400,600,700|Dancing+Script:400,700');
 ?>
 <!DOCTYPE HTML>
 <html lang="<?php echo $locale; ?>">
@@ -104,197 +101,129 @@ $this->headLink()->appendStylesheet('https://fonts.googleapis.com/css?family=Ral
 </head>
 <body id="pi-<?php echo $module; ?>" class="pi-locale-<?php echo $locale; ?>">
 <header class="pi-header">
+    <div class="pi-header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <?php if ($module == 'system') { ?>
+                        <h1>
+                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                                <?php echo _escape($sitename); ?>
+                            </a>
+                        </h1>
+                    <?php } else { ?>
+                        <h2>
+                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                                <?php echo _escape($sitename); ?>
+                            </a>
+                        </h2>
+                    <?php } ?>
+                </div>
+                <div class="col-md-9">
+                    <?php echo $this->widget('system-user-bar'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" title="<?php echo _escape($sitename); ?>" href="<?php echo $this->url('home'); ?>">
-                    <?php echo _escape($sitename); ?>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav'); ?>
-                <?php echo $this->widget('system-user-bar', array('type' => 'js')); ?>
-                <?php if ($module != 'system') { ?>
-                    <div class="navbar-form navbar-right">
-                        <?php echo $this->widget('search-search'); ?>
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
                     </div>
-                <?php } ?>
+                    <div class="navbar-collapse collapse">
+                        <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav'); ?>
+                    </div>
+                </div>
+                <div class="col-md-2 pi-header-btn">
+                    <a itemprop="url" class="btn btn-primary" href="<?php echo Pi::url($this->url('home')); ?>event/manage" title="ثبت و مدیریت سفر">
+                        <span itemprop="name">ثبت و مدیریت سفر</span>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
     <div class="pi-header-body">
         <?php if ($module == 'system') { ?>
-            <div id="pi-header-slide" class="pi-header-system carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="active item">
-                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/header-1.jpg'); ?>" alt="جستجو و رزرو تور">
-                        <div class="carousel-caption">
-                            <div class="clearfix carousel-caption-body">
-                                <div class="col-md-12 col-sm-12 hidden-sm hidden-xs">
-                                    <div class="animated slideInDown">
-                                        <span><?php echo _escape($sitename); ?></span>
-                                    </div>
-                                    <div class="animated slideInLeft">
-                                        <h1>به مسافرت نیاز دارید؟<br> جستجو و رزرو تور در سریع ترین زمان ممکن </h1>
-                                    </div>
-                                    <div class="animated slideInRight">
-                                        <div class="pi-header-socialindex">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a rel="publisher" href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/header-2.jpg'); ?>" alt="میخواهید با مکان های توریستی آشنا شوید؟">
-                        <div class="carousel-caption">
-                            <div class="clearfix carousel-caption-body">
-                                <div class="col-md-12 col-sm-12 hidden-sm hidden-xs">
-                                    <div class="animated slideInDown">
-                                        <span>میخواهید با مکان های توریستی آشنا شوید؟</span>
-                                    </div>
-                                    <div class="animated slideInLeft">
-                                        <h2>دسترسی به طالاعات کامل اماکن توریستی <br> قبل از سفر ، مقصد خود را بررسی کنید</h2>
-                                    </div>
-                                    <div class="animated slideInRight">
-                                        <div class="pi-header-socialindex">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a rel="publisher" href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/header-3.jpg'); ?>" alt="میخواهید با مکان های توریستی آشنا شوید؟">
-                        <div class="carousel-caption">
-                            <div class="clearfix carousel-caption-body">
-                                <div class="col-md-12 col-sm-12 hidden-sm hidden-xs">
-                                    <div class="animated slideInDown">
-                                        <span>میخواهید با مکان های توریستی آشنا شوید؟</span>
-                                    </div>
-                                    <div class="animated slideInLeft">
-                                        <h2>دسترسی به طالاعات کامل اماکن توریستی <br> قبل از سفر ، مقصد خود را بررسی کنید</h2>
-                                    </div>
-                                    <div class="animated slideInRight">
-                                        <div class="pi-header-socialindex">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a rel="publisher" href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/header-4.jpg'); ?>" alt="میخواهید با مکان های توریستی آشنا شوید؟">
-                        <div class="carousel-caption">
-                            <div class="clearfix carousel-caption-body">
-                                <div class="col-md-12 col-sm-12 hidden-sm hidden-xs">
-                                    <div class="animated slideInDown">
-                                        <span>میخواهید با مکان های توریستی آشنا شوید؟</span>
-                                    </div>
-                                    <div class="animated slideInLeft">
-                                        <h2>دسترسی به طالاعات کامل اماکن توریستی <br> قبل از سفر ، مقصد خود را بررسی کنید</h2>
-                                    </div>
-                                    <div class="animated slideInRight">
-                                        <div class="pi-header-socialindex">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a rel="publisher" href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel nav -->
-                <a class="right carousel-control carousel-arrow" href="#pi-header-slide" data-slide="prev">
-                    <span class="icon-prev fa fa-chevron-left"></span>
-                </a>
-                <a class="left carousel-control carousel-arrow" href="#pi-header-slide" data-slide="next">
-                    <span class="icon-next fa fa-chevron-right"></span>
-                </a>
-                <script type="text/javascript">
-                    $("#pi-header-slide").carousel({
-                        "interval":"12000",
-                        "pause":"hover"
-                    });
-                </script>
-            </div>
-            <div class="pi-header-pinkbar">
+            <?php echo $this->widget('widget-highlights'); ?>
+            <div class="pi-header-body-text">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                            <?php echo $this->widget('search-search'); ?>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="pi-header-pinkbar-maintext">تور بریم ، مرجع اصلی رزرو تور ویافتن امکان دیدنی در ایران</div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pi-header-pinkbar-box">
-                            <div class="about-icon">
-                                <i class="fa fa-wifi"></i>
+                        <div class="col-md-8">
+                            <div class="pi-header-information">
+                                <strong><?php echo _escape($sitename); ?></strong> پروژه ای است به منظور معرفی و آشنایی و روز تور های طبیعت گردی
                             </div>
-                            <div class="about-title">تور ها ...</div>
-                            <p class="about-p">جستجو بین تور ها ، مقایسه و امکان رزرو سریع ...</p>
-                            <div class="clearfix">&nbsp;</div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pi-header-pinkbar-box">
-                            <div class="about-icon">
-                                <i class="fa fa-compass"></i>
+                        <div class="col-md-4">
+                            <div class="pi-header-social">
+                                <ul class="list-inline">
+                                    <li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a rel="publisher" href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
                             </div>
-                            <div class="about-title">امکان دیدنی ...</div>
-                            <p class="about-p">اطلاعات جامع از امکان دیدنی قبل از سفر ...</p>
-                            <div class="clearfix"> &nbsp;</div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pi-header-pinkbar-box">
-                            <div class="about-icon">
-                                <i class="fa fa-line-chart"></i>
-                            </div>
-                            <div class="about-title">اطلاعات ...</div>
-                            <p class="about-p">اطلاعات جامع و نیازمندی ها ...</p>
-                            <div class="clearfix">&nbsp;</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <?php } else { ?>
-            <div class="pi-header-bar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 clearfix">
-                            <div class="pi-header-title" class="animated slideInLeft pull-left pi-moduletitle"><span><?php echo $moduleName; ?></span></div>
                         </div>
                     </div>
                 </div>
             </div>
         <?php } ?>
+        <div class="pi-header-body-category clearfix">
+            <div class="thumbnail">
+                <a href="#" title="">
+                    <img class="img-responsive" src="<?php echo $this->assetTheme('image/europe.jpg'); ?>" alt="">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="#" title="">شاخه نمونه</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <a href="#" title="">
+                    <img class="img-responsive" src="<?php echo $this->assetTheme('image/asia.jpg'); ?>" alt="">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="#" title="">شاخه نمونه</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <a href="#" title="">
+                    <img class="img-responsive" src="<?php echo $this->assetTheme('image/europe.jpg'); ?>" alt="">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="#" title="">شاخه نمونه</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <a href="#" title="">
+                    <img class="img-responsive" src="<?php echo $this->assetTheme('image/asia.jpg'); ?>" alt="">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="#" title="">شاخه نمونه</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <a href="#" title="">
+                    <img class="img-responsive" src="<?php echo $this->assetTheme('image/europe.jpg'); ?>" alt="">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="#" title="">شاخه نمونه</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <section class="pi-section">
@@ -447,29 +376,29 @@ $this->headLink()->appendStylesheet('https://fonts.googleapis.com/css?family=Ral
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <h3>مدت اجرای سفرها</h3>
                         <ul class="list-unstyled">
-                            <li><a title="تورهای یک روزه" href="https://www.tourberim.com/event/one-day-tours"><i class="fa fa-angle-left"></i> تورهای یک روزه</a></li>
-                            <li><a title="تورهای چند روزه" href="https://www.tourberim.com/event/mult-day-tours"><i class="fa fa-angle-left"></i> تورهای چند روزه</a></li>
-                            <li><a title="تورهای همه روزه" href="https://www.tourberim.com/event/every-day"><i class="fa fa-angle-left"></i> تورهای همه روزه</a></li>
+                            <li><a title="تورهای یک روزه" href="<?php echo Pi::url($this->url('home')); ?>event/one-day-tours"><i class="fa fa-angle-left"></i> تورهای یک روزه</a></li>
+                            <li><a title="تورهای چند روزه" href="<?php echo Pi::url($this->url('home')); ?>event/mult-day-tours"><i class="fa fa-angle-left"></i> تورهای چند روزه</a></li>
+                            <li><a title="تورهای همه روزه" href="<?php echo Pi::url($this->url('home')); ?>event/every-day"><i class="fa fa-angle-left"></i> تورهای همه روزه</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <h3>طبقه‌بندی سفرها</h3>
                         <ul class="list-unstyled">
-                            <li><a title="طبیعت گردی" href="https://www.tourberim.com/event/ecotourism"><i class="fa fa-angle-left"></i> طبیعت گردی</a></li>
-                            <li><a title="تاریخی" href="https://www.tourberim.com/event/historical"><i class="fa fa-angle-left"></i> تاریخی</a></li>
-                            <li><a title="کوهنوردی" href="https://www.tourberim.com/event/mountaineering"><i class="fa fa-angle-left"></i> کوهنوردی</a></li>
-                            <li><a title="صحرانوردی" href="https://www.tourberim.com/event/cross-country"><i class="fa fa-angle-left"></i> صحرانوردی</a></li>
-                            <li><a title="عکاسی" href="https://www.tourberim.com/event/photography"><i class="fa fa-angle-left"></i> عکاسی</a></li>
-                            <li><a title="رصد" href="https://www.tourberim.com/event/observation"><i class="fa fa-angle-left"></i> رصد</a></li>
+                            <li><a title="طبیعت گردی" href="<?php echo Pi::url($this->url('home')); ?>event/ecotourism"><i class="fa fa-angle-left"></i> طبیعت گردی</a></li>
+                            <li><a title="تاریخی" href="<?php echo Pi::url($this->url('home')); ?>event/historical"><i class="fa fa-angle-left"></i> تاریخی</a></li>
+                            <li><a title="کوهنوردی" href="<?php echo Pi::url($this->url('home')); ?>event/mountaineering"><i class="fa fa-angle-left"></i> کوهنوردی</a></li>
+                            <li><a title="صحرانوردی" href="<?php echo Pi::url($this->url('home')); ?>event/cross-country"><i class="fa fa-angle-left"></i> صحرانوردی</a></li>
+                            <li><a title="عکاسی" href="<?php echo Pi::url($this->url('home')); ?>event/photography"><i class="fa fa-angle-left"></i> عکاسی</a></li>
+                            <li><a title="رصد" href="<?php echo Pi::url($this->url('home')); ?>event/observation"><i class="fa fa-angle-left"></i> رصد</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <h3>نحوه اجرای سفرها</h3>
                         <ul class="list-unstyled">
-                            <li><a title="انفرادی" href="https://www.tourberim.com/event/single"><i class="fa fa-angle-left"></i> انفرادی</a></li>
-                            <li><a title="دوستانه" href="https://www.tourberim.com/event/friendly"><i class="fa fa-angle-left"></i> دوستانه</a></li>
-                            <li><a title="خانوادگی" href="https://www.tourberim.com/event/familial"><i class="fa fa-angle-left"></i> خانوادگی</a></li>
-                            <li><a title="کودکان" href="https://www.tourberim.com/event/children"><i class="fa fa-angle-left"></i> کودکان</a></li>
+                            <li><a title="انفرادی" href="<?php echo Pi::url($this->url('home')); ?>event/single"><i class="fa fa-angle-left"></i> انفرادی</a></li>
+                            <li><a title="دوستانه" href="<?php echo Pi::url($this->url('home')); ?>event/friendly"><i class="fa fa-angle-left"></i> دوستانه</a></li>
+                            <li><a title="خانوادگی" href="<?php echo Pi::url($this->url('home')); ?>event/familial"><i class="fa fa-angle-left"></i> خانوادگی</a></li>
+                            <li><a title="کودکان" href="<?php echo Pi::url($this->url('home')); ?>event/children"><i class="fa fa-angle-left"></i> کودکان</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
