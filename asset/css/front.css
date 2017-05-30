@@ -662,3 +662,17 @@ fieldset[disabled] .btn-primary.focus {
 .box-information li:nth-child(5):before {
     content: '۵';
 }
+
+/* event */
+.event-organizer {
+    background: #ffc500;
+    border-radius: 20px;
+    padding: 40px 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.single-event .well {
+    border-radius: 20px;
+    border-color: #F5F5F5;
+}
