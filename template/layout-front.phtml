@@ -105,47 +105,56 @@ $breadcrumbs = $this->breadcrumb(
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <?php if ($module == 'system') { ?>
-                        <h1>
-                            <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>">
-                                <?php echo _escape($sitename); ?>
-                            </a>
-                        </h1>
-                    <?php } else { ?>
-                        <h2>
-                            <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>">
-                                <?php echo _escape($sitename); ?>
-                            </a>
-                        </h2>
-                    <?php } ?>
+
                 </div>
-                <div class="col-md-9">
-                    <?php echo $this->widget('system-user-bar'); ?>
-                </div>
+
             </div>
         </div>
     </div>
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="row">
-                <div class="col-md-10">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav'); ?>
-                    </div>
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <?php if ($module == 'system') { ?>
+                        <h1 class="navbar-brand">
+                            <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>">
+                                <?php echo _escape($sitename); ?>
+                            </a>
+                        </h1>
+                    <?php } else { ?>
+                        <h2 class="navbar-brand">
+                            <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>">
+                                <?php echo _escape($sitename); ?>
+                            </a>
+                        </h2>
+                    <?php } ?>
                 </div>
-                <div class="col-md-2 pi-header-btn">
-                    <a itemprop="url" class="btn btn-primary" href="<?php echo Pi::url($this->url('home')); ?>/event/manage" title="ثبت و مدیریت سفر">
-                        <span itemprop="name">ثبت و مدیریت سفر</span>
-                    </a>
+                <div class="navbar-collapse collapse">
+                    <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav'); ?>
+                    <?php echo $this->widget('system-user-bar'); ?>
                 </div>
             </div>
         </div>
     </nav>
+    <div class="pi-header-body-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="pi-header-information">در صورتی که برگزارکننده تور های طبیعت گردی و مجارجویی هستید ، اطلاعات تور خود را به رایگان ثبت کنید</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pi-header-btn">
+                        <a itemprop="url" class="btn btn-primary" href="<?php echo Pi::url($this->url('home')); ?>/event/manage" title="ثبت و مدیریت سفر">
+                            <span itemprop="name">ثبت و مدیریت سفر</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="pi-header-body">
         <?php if ($module == 'system') { ?>
             <?php echo $this->widget('widget-highlights'); ?>
