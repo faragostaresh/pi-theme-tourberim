@@ -683,3 +683,13 @@ fieldset[disabled] .btn-primary.focus {
     background-color: #ffc500;
     padding: 10px 5px;
 }
+
+.event-single-main-box {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.event-single-summary {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
