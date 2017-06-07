@@ -676,3 +676,10 @@ fieldset[disabled] .btn-primary.focus {
     border-radius: 20px;
     border-color: #F5F5F5;
 }
+
+.event-single-organizer {
+    text-align: center;
+    color: #232323;
+    background-color: #ffc500;
+    padding: 10px 5px;
+}

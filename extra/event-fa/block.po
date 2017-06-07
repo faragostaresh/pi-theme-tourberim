@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: support\n"
+"POT-Creation-Date: 2017-05-30 12:57+0430\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _b\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: src/Block/Block.php:106
+msgid "free!"
+msgstr "رایگان !"
+
+#: src/Block/Block.php:107
+msgid "Toman"
+msgstr "تومان"
+
+#: src/Block/Block.php:108
+#, php-format
+msgid "%s days"
+msgstr "%s روزه"
+
+#: src/Block/Block.php:109
+msgid "1 days"
+msgstr "۱ روزه"
+
+#: src/Controller/Front/JsonController.php:410
+#: template/admin/event-index.phtml:45 template/block/recent-event.phtml:41
+#: template/block/recent-event.phtml:108
+msgid "From"
+msgstr "از"
+
+#: src/Controller/Front/JsonController.php:410
+#: template/admin/event-index.phtml:46 template/block/recent-event.phtml:44
+#: template/block/recent-event.phtml:110
+msgid "to"
+msgstr "تا"
+
+#: template/block/recent-event.phtml:64 template/block/recent-event.phtml:157
+msgid "Minimum Price"
+msgstr "قیمت"
+
+#: template/block/recent-event.phtml:188 template/block/recent-event.phtml:189
+msgid "More events"
+msgstr "رویداد های بیشتر"
+
+#: template/block/recent-event.phtml:193
+msgid "No event actually or to come"
+msgstr "هیچ رویدادی در دسترس نیست"
+
+#~ msgid "this event is free!"
+#~ msgstr "این رویداد رایگان است !"

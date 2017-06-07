@@ -1,0 +1,784 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: support\n"
+"POT-Creation-Date: 2017-05-30 12:53+0430\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: src/Api/Breadcrumbs.php:74 src/Api/Breadcrumbs.php:79
+#: src/Api/Breadcrumbs.php:91
+msgid "Manage events"
+msgstr "مدیریت تور ها"
+
+#: src/Api/Breadcrumbs.php:86 template/front/manage-index.phtml:55
+#: template/front/manage-index.phtml:57
+msgid "List of orders"
+msgstr "فهرست سفارش ها"
+
+#: src/Api/Breadcrumbs.php:98
+msgid "Add / edit event"
+msgstr "ثبت / ویرایش تور"
+
+#: src/Api/Event.php:280
+#, php-format
+msgid "Out of stock ( %s )"
+msgstr "ظرفیت تکمیل ( %s )"
+
+#: src/Api/Event.php:282 src/Api/Event.php:288
+msgid "free!"
+msgstr "رایگان !"
+
+#: src/Api/Event.php:335 src/Api/Event.php:382
+#: template/front/event-detail.phtml:6 template/front/event-detail.phtml:224
+#: template/front/event-detail.phtml:371 template/front/order-detail.phtml:16
+msgid "From"
+msgstr "از"
+
+#: src/Api/Event.php:335 src/Api/Event.php:382
+#: template/front/event-detail.phtml:8 template/front/event-detail.phtml:226
+#: template/front/event-detail.phtml:374 template/front/order-detail.phtml:18
+msgid "to"
+msgstr "تا"
+
+#: src/Api/Event.php:342 src/Api/Event.php:450
+#, php-format
+msgid "%s days"
+msgstr "%s روزه"
+
+#: src/Api/Event.php:344 src/Api/Event.php:452
+msgid "1 days"
+msgstr "۱ روزه"
+
+#: src/Controller/Admin/EventController.php:74
+msgid "View filtered events"
+msgstr "نمایش تور های فیلتر شده"
+
+#: src/Controller/Admin/EventController.php:80
+msgid "Not valid"
+msgstr "صحیح نیست\t"
+
+#: src/Controller/Admin/EventController.php:86
+msgid "Not set"
+msgstr "تنظیم نشده"
+
+#: src/Controller/Admin/EventController.php:190
+#: src/Controller/Admin/EventController.php:200
+msgid "Error on save story data on event module."
+msgstr "خطا در ذخیره اطلاعات مطلب در ماژول تور."
+
+#: src/Controller/Admin/EventController.php:286
+msgid "Event data saved successfully."
+msgstr "ویرایش تور با موفقیت انجام شد"
+
+#: src/Controller/Admin/EventController.php:307
+#: src/Controller/Front/ManageController.php:158
+#: template/admin/event-index.phtml:5 template/admin/event-index.phtml:7
+msgid "Add event"
+msgstr "تور جدید"
+
+#: src/Controller/Admin/ToolsController.php:191
+msgid "Guide events imported to event module"
+msgstr "تور های ماژول معرفی اماکن به ماژول تور منتقل شد"
+
+#: src/Controller/Admin/ToolsController.php:194
+msgid "Guide event table is empty"
+msgstr "جدول تور های ماژول معرفی اماکن خالی است"
+
+#: src/Controller/Admin/ToolsController.php:197
+msgid "Guide module not installed"
+msgstr "ماژول معرفی اماکن نصب نشده است"
+
+#: src/Controller/Admin/ToolsController.php:211
+msgid "Rebuild thie module links on sitemap module tabels"
+msgstr "بازسازی لینک های ماژول در ماٰژول نقشه سایت"
+
+#: src/Controller/Admin/ToolsController.php:220
+msgid "Sitemap rebuild finished"
+msgstr "بازسازی لینک های نقشه سایت پایان یافت"
+
+#: src/Controller/Admin/ToolsController.php:225
+msgid "Rebuild sitemap links"
+msgstr "بازسازی لینک های نقشه سایت"
+
+#: src/Controller/Feed/IndexController.php:24
+msgid "Event feed"
+msgstr "خوراک تور ها"
+
+#: src/Controller/Feed/IndexController.php:25
+msgid "Recent events"
+msgstr "تور های جدید"
+
+#: src/Controller/Front/CategoryController.php:32
+#: src/Controller/Front/JsonController.php:478
+msgid "The category not found."
+msgstr "شاخه یافت نشد"
+
+#: src/Controller/Front/CategoryController.php:63
+#, php-format
+msgid "Event list on %s"
+msgstr "فهرست تور ها در %s"
+
+#: src/Controller/Front/CategoryController.php:67
+#: src/Controller/Front/IndexController.php:52
+msgid "Toman"
+msgstr "تومان"
+
+#: src/Controller/Front/DetailController.php:39
+#: src/Controller/Front/RegisterController.php:57
+msgid "The event not found."
+msgstr "تور یافت نشد"
+
+#: src/Controller/Front/IndexController.php:48
+msgid "Event list"
+msgstr "فهرست تور ها"
+
+#: src/Controller/Front/JsonController.php:80
+#: template/admin/event-index.phtml:14
+msgid "List of events"
+msgstr "فهرست تور ها"
+
+#: src/Controller/Front/JsonController.php:91
+#: src/Controller/Front/JsonController.php:102
+#: template/front/event-angular-new.phtml:114
+#: template/front/event-angular.phtml:178
+#: template/front/event-angular.phtml:193
+#: template/front/event-angular.phtml:205
+#: template/front/event-angular.phtml:217
+msgid "All"
+msgstr "همه"
+
+#: src/Controller/Front/JsonController.php:124
+#, php-format
+msgid "List of events on %s category"
+msgstr "تمام تور های شاخه %s"
+
+#: src/Controller/Front/JsonController.php:142
+#, php-format
+msgid "All events from %s"
+msgstr "تمام تور ها از %s"
+
+#: src/Controller/Front/ManageController.php:37
+#: src/Controller/Front/ManageController.php:97
+#: src/Controller/Front/ManageController.php:378
+#: src/Controller/Front/ManageController.php:440
+msgid "Owner dashboard is inactive"
+msgstr "داشبورد سازنده تور غیر فعال است"
+
+#: src/Controller/Front/ManageController.php:76
+msgid "All your events"
+msgstr "تمام تور های شما"
+
+#: src/Controller/Front/ManageController.php:81
+msgid "Search"
+msgstr "جستجو"
+
+#: src/Controller/Front/ManageController.php:118
+#: src/Controller/Front/ManageController.php:399
+#: src/Controller/Front/ManageController.php:461
+#: template/front/manage-index.phtml:75
+msgid ""
+"You are not allowed to submit new event, please contact to website admin and "
+"complete your registration, after that you allowed to submit events"
+msgstr ""
+"شما هنوز دسترسی برای ارسال تور جدیدی را ندارید، لطفا با مدیر وب سایت تماس "
+"بگیرید تا ثبت نمام شما نهایی شود و دسترسی ارسال تور برای شما فعال شود، بعد "
+"از آن می توانید تور جدیدی ثبت نمایید."
+
+#: src/Controller/Front/ManageController.php:150
+#: src/Controller/Front/ManageController.php:166
+#: src/Controller/Front/ManageController.php:408
+#: src/Controller/Front/ManageController.php:418
+#: src/Controller/Front/ManageController.php:470
+#: src/Controller/Front/ManageController.php:480
+msgid "Its not your event"
+msgstr "این تور متعلق به شما نیست"
+
+#: src/Controller/Front/ManageController.php:156
+msgid "Update event"
+msgstr "به روز رسانی تور ها"
+
+#: src/Controller/Front/ManageController.php:174
+#, php-format
+msgid "Add event to %s"
+msgstr "درج تور در %s"
+
+#: src/Controller/Front/ManageController.php:246
+#: src/Controller/Front/ManageController.php:256
+msgid "Error on save story data on news module."
+msgstr "خطا در ثبت اطلاعات در ماژول اخبار"
+
+#: src/Controller/Front/ManageController.php:344
+msgid ""
+"Thanks for contributing ! Event data saved successfully and was published on "
+"public side"
+msgstr ""
+"با تشکر از مشارکت شما ! اطلاعات تور با موفقیت ذخیره شد و در وب سایت منتشر شد"
+
+#: src/Controller/Front/ManageController.php:346
+msgid ""
+"Thanks for contributing ! Event data saved successfully and we will be "
+"validate it soon"
+msgstr ""
+"با تشکر از مشارکت شما ! اطلاعات تور با موفقیت ذخیره شد و به زودی در دسترس "
+"خواهد بود"
+
+#: src/Controller/Front/RegisterController.php:29
+msgid "So sorry, At this moment order is inactive"
+msgstr "متاسفانه در این لحظه ثبت سفارش مقدور نیست"
+
+#: src/Controller/Front/RegisterController.php:46
+msgid "You need select event"
+msgstr "شما باید یک تور انتخاب کنید"
+
+#: src/Controller/Front/RegisterController.php:63
+msgid "This event not available for registration"
+msgstr "این تور برای ثبت نام در دسترس نیست"
+
+#: src/Controller/Front/RegisterController.php:68
+msgid "This event do not have enough capacity"
+msgstr "این تور ظرفیت کافی برای ثبت نام ندارد"
+
+#: src/Controller/Front/RegisterController.php:108
+msgid "Order module not installed"
+msgstr "ماژول سفارش ثبت نشده است"
+
+#: src/Form/EventForm.php:50 template/admin/event-index.phtml:18
+#: template/front/event-angular-new.phtml:113
+#: template/front/event-angular.phtml:172
+#: template/front/event-angular.phtml:249 template/front/manage-index.phtml:24
+msgid "Title"
+msgstr "عنوان"
+
+#: src/Form/EventForm.php:62
+msgid "Subtitle"
+msgstr "عنوان دوم"
+
+#: src/Form/EventForm.php:74
+msgid "slug"
+msgstr "اسلاگ"
+
+#: src/Form/EventForm.php:94
+msgid "Time options"
+msgstr "گزینه های زمان"
+
+#: src/Form/EventForm.php:102
+msgid "Time start"
+msgstr "زمان شروع"
+
+#: src/Form/EventForm.php:124
+msgid "Time end"
+msgstr "زمان پایان"
+
+#: src/Form/EventForm.php:145
+msgid "Description options"
+msgstr "گزینه های توضیحات"
+
+#: src/Form/EventForm.php:152
+msgid "Summary"
+msgstr "خلاصه"
+
+#: src/Form/EventForm.php:165
+msgid "Description"
+msgstr "توضیحات"
+
+#: src/Form/EventForm.php:178
+msgid "Main options"
+msgstr "گزینه های اصلی"
+
+#: src/Form/EventForm.php:187
+msgid "Status"
+msgstr "وضعیت"
+
+#: src/Form/EventForm.php:189 template/admin/event-index.phtml:66
+#: template/front/manage-index.phtml:65
+msgid "Published"
+msgstr "منتشر شده"
+
+#: src/Form/EventForm.php:190 template/admin/event-index.phtml:67
+#: template/front/manage-index.phtml:66
+msgid "Pending review"
+msgstr "در انتظار تایید"
+
+#: src/Form/EventForm.php:191 template/admin/event-index.phtml:68
+msgid "Draft"
+msgstr "پیش نویس"
+
+#: src/Form/EventForm.php:192 template/admin/event-index.phtml:69
+msgid "Private"
+msgstr "خصوصی"
+
+#: src/Form/EventForm.php:193
+msgid "Delete"
+msgstr "حذف"
+
+#: src/Form/EventForm.php:206
+msgid "Main image"
+msgstr "تصویر اصلی"
+
+#: src/Form/EventForm.php:214 template/front/event-detail.phtml:165
+#: template/front/event-detail.phtml:279 template/front/order-detail.phtml:43
+msgid "Address"
+msgstr "آدرس"
+
+#: src/Form/EventForm.php:225 template/front/event-detail.phtml:151
+#: template/front/event-detail.phtml:265 template/front/order-detail.phtml:27
+msgid "Organizer name"
+msgstr "برگزارکننده‌ی تور"
+
+#: src/Form/EventForm.php:236 template/front/event-detail.phtml:156
+#: template/front/event-detail.phtml:271 template/front/event-detail.phtml:272
+#: template/front/order-detail.phtml:33 template/front/order-detail.phtml:35
+msgid "Organizer Website"
+msgstr "وب سایت برگزارکننده"
+
+#: src/Form/EventForm.php:247
+msgid "Offer url"
+msgstr "لینک صفحه خرید تور"
+
+#: src/Form/EventForm.php:259
+msgid "Registration options"
+msgstr "گزینه های ثبت نام داخلی"
+
+#: src/Form/EventForm.php:266
+msgid "Registration details/requirements"
+msgstr "توضیحات ثبت نام"
+
+#: src/Form/EventForm.php:278
+msgid "Minimum Price"
+msgstr "قیمت"
+
+#: src/Form/EventForm.php:292
+msgid "Register online?"
+msgstr "ثبت نام آنلاین؟"
+
+#: src/Form/EventForm.php:302
+msgid "Capacity"
+msgstr "ظرفیت"
+
+#: src/Form/EventForm.php:314
+msgid "Registration type"
+msgstr "نوع ثبت نام"
+
+#: src/Form/EventForm.php:316
+msgid "Discount code"
+msgstr "کد تخفیف"
+
+#: src/Form/EventForm.php:317
+msgid "Pay full price"
+msgstr "پرداخت هزینه کامل"
+
+#: src/Form/EventForm.php:330
+msgid "Discount options"
+msgstr "گزینه تخفیف"
+
+#: src/Form/EventForm.php:345
+msgid "Number and between 1 to 99"
+msgstr "عدد بین ۱ تا ۹۹"
+
+#: src/Form/EventForm.php:356
+msgid "Topic options"
+msgstr "گزینه های شاخه"
+
+#: src/Form/EventForm.php:364
+msgid "Topic"
+msgstr "شاخه"
+
+#: src/Form/EventForm.php:375
+msgid "Main topic"
+msgstr "شاخه اصلی"
+
+#: src/Form/EventForm.php:384
+msgid "Just use for breadcrumbs and mobile apps"
+msgstr "فقط برای ناوبری و نرم افزار موبایل استفاده می شود"
+
+#: src/Form/EventForm.php:394
+msgid "Guide options"
+msgstr "گزینه های ماژول Guide"
+
+#: src/Form/EventForm.php:403
+msgid "Owner"
+msgstr "سازنده"
+
+#: src/Form/EventForm.php:414 template/front/event-angular-new.phtml:128
+#: template/front/event-angular.phtml:191
+msgid "Category"
+msgstr "شاخه"
+
+#: src/Form/EventForm.php:432 template/front/event-angular-new.phtml:127
+#: template/front/event-angular.phtml:203
+msgid "Location"
+msgstr "منطقه"
+
+#: src/Form/EventForm.php:451
+msgid "Item"
+msgstr "اماکن"
+
+#: src/Form/EventForm.php:471
+msgid "Map options"
+msgstr "نقشه"
+
+#: src/Form/EventForm.php:478
+msgid "Latitude"
+msgstr "عرض جغرافیایی(Latitude)"
+
+#: src/Form/EventForm.php:489
+msgid "Longitude"
+msgstr "طول جغرافیایی(Longitude) "
+
+#: src/Form/EventForm.php:500
+msgid "Zoom"
+msgstr "بزرگنمایی"
+
+#: src/Form/EventForm.php:514
+msgid "SEO options"
+msgstr "گزینه های سئو"
+
+#: src/Form/EventForm.php:521
+msgid "SEO Title"
+msgstr "عنوان متا ( Meta Title )"
+
+#: src/Form/EventForm.php:534
+msgid "SEO Keywords"
+msgstr "کلمات کلیدی متا ( Meta Keywords ) "
+
+#: src/Form/EventForm.php:547
+msgid "SEO Description"
+msgstr "توضیح متا ( Meta Description ) "
+
+#: src/Form/EventForm.php:562 src/Form/SitemapForm.php:43
+msgid "Submit"
+msgstr "ارسال"
+
+#: src/Form/RegisterForm.php:63 template/front/event-detail.phtml:201
+#: template/front/event-detail.phtml:202
+msgid "Register to the event"
+msgstr "ثبت نام"
+
+#: src/Form/SitemapForm.php:32
+msgid "Select for rebuild"
+msgstr "انتخاب برای بازسازی"
+
+#: src/Form/SitemapForm.php:34
+msgid "Just events from news story table"
+msgstr "فقط تور های مربوط به جدول اخبار"
+
+#: template/admin/event-index.phtml:17 template/admin/order-index.phtml:6
+#: template/front/manage-index.phtml:23 template/front/manage-order.phtml:15
+msgid "ID"
+msgstr "شناسه"
+
+#: template/admin/event-index.phtml:19 template/front/manage-index.phtml:27
+msgid "Action"
+msgstr "عملکرد"
+
+#: template/admin/event-index.phtml:53 template/admin/event-index.phtml:54
+#: template/front/manage-index.phtml:47 template/front/manage-index.phtml:49
+msgid "View"
+msgstr "نمایش"
+
+#: template/admin/event-index.phtml:55 template/admin/event-index.phtml:57
+#: template/front/manage-index.phtml:51 template/front/manage-index.phtml:53
+msgid "Edit"
+msgstr "ویرایش"
+
+#: template/admin/event-index.phtml:70
+msgid "Trash"
+msgstr "سطل آشغال"
+
+#: template/admin/order-index.phtml:3
+msgid "List of all orders"
+msgstr "فهرست تمام تور ها"
+
+#: template/admin/order-index.phtml:7 template/front/manage-order.phtml:16
+msgid "Name"
+msgstr "نام"
+
+#: template/admin/order-index.phtml:8 template/front/order-detail.phtml:48
+msgid "Public code"
+msgstr "کد عمومی"
+
+#: template/admin/order-index.phtml:9 template/front/order-detail.phtml:52
+msgid "Private code"
+msgstr "کد خصوصی"
+
+#: template/admin/order-index.phtml:10 template/front/manage-order.phtml:17
+msgid "Number"
+msgstr "تعداد"
+
+#: template/admin/order-index.phtml:11 template/front/manage-order.phtml:18
+msgid "Total"
+msgstr "مجموع"
+
+#: template/admin/order-index.phtml:12
+msgid "Event"
+msgstr "تور"
+
+#: template/admin/order-index.phtml:38 template/admin/order-index.phtml:64
+#: template/front/event-angular-new.phtml:115
+msgid "Close"
+msgstr "بستن"
+
+#: template/admin/tools-index.phtml:4 template/admin/tools-index.phtml:6
+#: template/admin/tools-sitemap.phtml:4 template/admin/tools-sitemap.phtml:6
+msgid "Import events from guide module"
+msgstr "انتقال تور ها از ماژول معرفی اماکن"
+
+#: template/admin/tools-index.phtml:7 template/admin/tools-index.phtml:9
+#: template/admin/tools-sitemap.phtml:7 template/admin/tools-sitemap.phtml:9
+msgid "Sitemap"
+msgstr "نقشه سایت"
+
+#: template/front/event-angular-new.phtml:112
+#: template/front/event-angular.phtml:168
+msgid "Search on this group"
+msgstr "جستجو در این گروه"
+
+#: template/front/event-angular-new.phtml:116
+msgid "No event"
+msgstr "هیچ توری در دسترس نیست"
+
+#: template/front/event-angular-new.phtml:117
+#: template/front/event-angular.phtml:176
+msgid "Event time"
+msgstr "تاریخ تور"
+
+#: template/front/event-angular-new.phtml:118
+#: template/front/event-angular.phtml:179
+msgid "This week"
+msgstr "این هفته"
+
+#: template/front/event-angular-new.phtml:119
+#: template/front/event-angular.phtml:180
+msgid "Next week"
+msgstr "هفته آینده"
+
+#: template/front/event-angular-new.phtml:120
+#: template/front/event-angular.phtml:181
+msgid "This month"
+msgstr "این ماه"
+
+#: template/front/event-angular-new.phtml:121
+#: template/front/event-angular.phtml:182
+msgid "Next month"
+msgstr "ماه آینده"
+
+#: template/front/event-angular-new.phtml:122
+#: template/front/event-angular.phtml:183
+msgid "Next two months"
+msgstr "دو ماه آینده"
+
+#: template/front/event-angular-new.phtml:123
+#: template/front/event-angular.phtml:184
+msgid "Next three months"
+msgstr "سه ماه آینده"
+
+#: template/front/event-angular-new.phtml:124
+#: template/front/event-angular.phtml:185
+msgid "Next months"
+msgstr "ماه های بعدی"
+
+#: template/front/event-angular-new.phtml:125
+#: template/front/event-angular.phtml:186
+msgid "Expired"
+msgstr "باطل شده"
+
+#: template/front/event-angular-new.phtml:126
+msgid "Active"
+msgstr "فعال"
+
+#: template/front/event-angular.phtml:215
+msgid "Price"
+msgstr "قیمت"
+
+#: template/front/event-angular.phtml:241
+msgid "Sort by"
+msgstr "مرتب سازی براساس"
+
+#: template/front/event-angular.phtml:242
+msgid "Time"
+msgstr "تاریخ انتشار"
+
+#: template/front/event-angular.phtml:245
+msgid "Hits"
+msgstr "بازدید"
+
+#: template/front/event-angular.phtml:252
+msgid "Default"
+msgstr "پیشفرض"
+
+#: template/front/event-detail.phtml:118
+#, php-format
+msgid "Participate/Register to %s"
+msgstr "شرکت / ثبت نام در %s"
+
+#: template/front/event-detail.phtml:133
+msgid "Access Map"
+msgstr "نقشه"
+
+#: template/front/event-detail.phtml:158
+msgid "Organizer Website and register"
+msgstr "ثبت نام"
+
+#: template/front/event-detail.phtml:178 template/front/event-detail.phtml:195
+#: template/front/event-detail.phtml:207
+msgid "Start From"
+msgstr "قیمت"
+
+#: template/front/event-detail.phtml:218
+msgid "Key Event Elements"
+msgstr "اطلاعات اصلی تور"
+
+#: template/front/event-detail.phtml:230 template/front/order-detail.phtml:21
+msgid "On"
+msgstr "در"
+
+#: template/front/event-detail.phtml:236
+msgid "Ended event"
+msgstr "این تور خاتمه یافته است"
+
+#: template/front/event-detail.phtml:249
+msgid "Related locations"
+msgstr "منطقه های مرتبط"
+
+#: template/front/event-detail.phtml:290
+msgid "You love this event ?"
+msgstr "این تور را دوست دارید؟"
+
+#: template/front/event-detail.phtml:300
+msgid "Vote to this event"
+msgstr "به این تور رای دهید"
+
+#: template/front/event-detail.phtml:307
+msgid "Nearby recommended professionals"
+msgstr "مکان های تجاری پیشنهادی نزدیک"
+
+#: template/front/event-detail.phtml:325 template/front/event-detail.phtml:434
+msgid "Min price from"
+msgstr "قیمت"
+
+#: template/front/event-detail.phtml:348
+msgid "Share if you like"
+msgstr "اشتراک گذاری در شبکه های اجتماعی"
+
+#: template/front/event-detail.phtml:363
+msgid "Related events"
+msgstr "تور های مشابه"
+
+#: template/front/event-detail.phtml:416
+msgid "Related items"
+msgstr "اماکن مرتبط"
+
+#: template/front/manage-index.phtml:13 template/front/manage-index.phtml:14
+msgid "New event"
+msgstr "تور جدید"
+
+#: template/front/manage-index.phtml:25
+msgid "Start"
+msgstr "آغاز"
+
+#: template/front/manage-index.phtml:26
+msgid "End"
+msgstr "پایان"
+
+#: template/front/manage-index.phtml:70
+msgid "You still doesn't submit any event, you can submit events easy"
+msgstr ""
+"شما هنوز هیچ توری ارسال نکرده اید، با استفاده از دکمه تور جدید در این صفحه "
+"می توانید تور خود را ثبت کنید"
+
+#: template/front/manage-order.phtml:19
+msgid "Code"
+msgstr "کد"
+
+#: template/front/manage-order.phtml:33
+msgid "This event still have no online register !"
+msgstr "در این تور هنوز هیچ ثبت نام آنلاینی انجام نشده است !"
+
+#: template/front/order-detail.phtml:5
+#, php-format
+msgid "Details of %s"
+msgstr "جزئیات تور %s"
+
+#: template/front/order-detail.phtml:9
+msgid "Register on"
+msgstr "تاریخ ثبت نام"
+
+#: template/front/order-detail.phtml:13
+msgid "Event date"
+msgstr "تاریخ پایان"
+
+#: template/front/order-detail.phtml:36
+msgid "Visit"
+msgstr "بازدید"
+
+#~ msgid ""
+#~ "Regenerate all images by new setting. Please make backup from youe files "
+#~ "on upload folder , before use this tools"
+#~ msgstr ""
+#~ "تولید دوباره تمام تصاویر با تنظیمات جدید، لطفا از فایل های تصاویر قبلی "
+#~ "نسخه پشتیبان تهیه فرمایید"
+
+#~ msgid "Regenerate images finished"
+#~ msgstr "بازتولید تصویر پایان یافت"
+
+#~ msgid "Regenerate images"
+#~ msgstr "باز تولید تصویر"
+
+#~ msgid "Change image"
+#~ msgstr "تغییر تصویر"
+
+#~ msgid "Uploaded image"
+#~ msgstr "تصویر بارگزاری شده"
+
+#~ msgid "Cropping data"
+#~ msgstr "کراپ کردن تصویر"
+
+#~ msgid "Select for regenerate"
+#~ msgstr "انتخاب برای تولید تصویر"
+
+#~ msgid "Just event images"
+#~ msgstr "فقط تصاویر رویداد"
+
+#~ msgid "Remove image event in process"
+#~ msgstr "حذف تصویر رویداد در حال اجرا است"
+
+#~ msgid "Image"
+#~ msgstr "تصویر"
+
+#~ msgid "List of your events"
+#~ msgstr "فهرست رویداد های ثبت شده توسط شما"
+
+#~ msgid "Remove image"
+#~ msgstr "حذف تصویر"
+
+#~ msgid "this event is free!"
+#~ msgstr "این رویداد رایگان است !"
+
+#~ msgid "Category list"
+#~ msgstr "فهرست شاخه ها"
+
+#~ msgid "Mian options"
+#~ msgstr "گزینه های اصلی"
+
+#~ msgid "Date"
+#~ msgstr "تاریخ"
+
+#~ msgid "Viewed"
+#~ msgstr "دیده شده"
+
+#~ msgid "Times"
+#~ msgstr "بار"
+
+#~ msgid "Related categories"
+#~ msgstr "بخش های مرتبط"
