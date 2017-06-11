@@ -120,13 +120,13 @@ $breadcrumbs = $this->breadcrumb(
                     </button>
                     <?php if ($module == 'system') { ?>
                         <h1 class="navbar-brand">
-                            <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>">
+                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
                                 <?php echo _escape($sitename); ?>
                             </a>
                         </h1>
                     <?php } else { ?>
                         <h2 class="navbar-brand">
-                            <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>">
+                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
                                 <?php echo _escape($sitename); ?>
                             </a>
                         </h2>
@@ -143,7 +143,7 @@ $breadcrumbs = $this->breadcrumb(
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="pi-header-information">در صورتی که برگزارکننده تور های طبیعت گردی و مجارجویی هستید ، اطلاعات تور خود را به رایگان ثبت کنید</div>
+                    <div class="pi-header-information">در صورتی که برگزارکننده تورهای طبیعت گردی و ماجراجویی هستید، اطلاعات تور خود را به رایگان ثبت کنید</div>
                 </div>
                 <div class="col-md-4">
                     <div class="pi-header-btn">
@@ -163,7 +163,7 @@ $breadcrumbs = $this->breadcrumb(
                     <div class="row">
                         <div class="col-md-8">
                             <div class="pi-header-information">
-                                <strong><?php echo _escape($sitename); ?></strong> پروژه ای است به منظور معرفی و آشنایی و روز تور های طبیعت گردی
+                                <strong>آگاما</strong>فرصت پیدا کردن سغری را که دوست دارید برای شما فراهم می‌کند. این‌جا می‌توانید به دنبال سفری جذاب با هزینه مناسب باشید.
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -218,7 +218,7 @@ $breadcrumbs = $this->breadcrumb(
                 </a>
                 <div class="caption">
                     <h3>
-                        <a href="<?php echo Pi::url($this->url('home')); ?>/event/cross-country" title="صحرانوردی">صحرانوردی</a>
+                        <a href="<?php echo Pi::url($this->url('home')); ?>/event/cross-country" title="کویرنوردی">کویرنوردی</a>
                     </h3>
                 </div>
             </div>
@@ -375,7 +375,7 @@ $breadcrumbs = $this->breadcrumb(
                                 <li><a target="_blank" title="" href="#"><i class="fa fa-facebook-square"></i></a></li>
                                 <li><a target="_blank" title="" href="#"><i class="fa fa-twitter-square"></i></a></li>
                                 <li><a target="_blank" title="" href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a target="_blank" title="" href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                                <li><a rel="publisher" target="_blank" title="" href="#"><i class="fa fa-google-plus-square"></i></a></li>
                                 <li><a target="_blank" title="" href="#"><i class="fa fa-linkedin-square"></i></a></li>
                             </ul>
                         </div>
@@ -385,9 +385,9 @@ $breadcrumbs = $this->breadcrumb(
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <h3>مدت اجرای سفرها</h3>
                         <ul class="list-unstyled">
-                            <li><a title="تورهای یک روزه" href="<?php echo Pi::url($this->url('home')); ?>/event/one-day-tours"><i class="fa fa-angle-left"></i> تورهای یک روزه</a></li>
-                            <li><a title="تورهای چند روزه" href="<?php echo Pi::url($this->url('home')); ?>/event/mult-day-tours"><i class="fa fa-angle-left"></i> تورهای چند روزه</a></li>
-                            <li><a title="تورهای همه روزه" href="<?php echo Pi::url($this->url('home')); ?>/event/every-day"><i class="fa fa-angle-left"></i> تورهای همه روزه</a></li>
+                            <li><a title="تورهای یک روزه" href="<?php echo Pi::url($this->url('home')); ?>/event"><i class="fa fa-angle-left"></i> تورهای یک روزه</a></li>
+                            <li><a title="تورهای چند روزه" href="<?php echo Pi::url($this->url('home')); ?>/event"><i class="fa fa-angle-left"></i> تورهای چند روزه</a></li>
+                            <li><a title="تورهای همه روزه" href="<?php echo Pi::url($this->url('home')); ?>/event"><i class="fa fa-angle-left"></i> تورهای همه روزه</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
@@ -396,27 +396,27 @@ $breadcrumbs = $this->breadcrumb(
                             <li><a title="طبیعت گردی" href="<?php echo Pi::url($this->url('home')); ?>/event/ecotourism"><i class="fa fa-angle-left"></i> طبیعت گردی</a></li>
                             <li><a title="ماجراجویی" href="<?php echo Pi::url($this->url('home')); ?>/event/adventure"><i class="fa fa-angle-left"></i> ماجراجویی</a></li>
                             <li><a title="کوهنوردی" href="<?php echo Pi::url($this->url('home')); ?>/event/mountaineering"><i class="fa fa-angle-left"></i> کوهنوردی</a></li>
-                            <li><a title="صحرانوردی" href="<?php echo Pi::url($this->url('home')); ?>/event/cross-country"><i class="fa fa-angle-left"></i> صحرانوردی</a></li>
+                            <li><a title="کویرنوردی" href="<?php echo Pi::url($this->url('home')); ?>/event/cross-country"><i class="fa fa-angle-left"></i> کویرنوردی</a></li>
                             <li><a title="رصد" href="<?php echo Pi::url($this->url('home')); ?>/event/observation"><i class="fa fa-angle-left"></i> رصد</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <h3>نحوه اجرای سفرها</h3>
                         <ul class="list-unstyled">
-                            <li><a title="انفرادی" href="<?php echo Pi::url($this->url('home')); ?>/event/single"><i class="fa fa-angle-left"></i> انفرادی</a></li>
-                            <li><a title="دوستانه" href="<?php echo Pi::url($this->url('home')); ?>/event/friendly"><i class="fa fa-angle-left"></i> دوستانه</a></li>
-                            <li><a title="خانوادگی" href="<?php echo Pi::url($this->url('home')); ?>/event/familial"><i class="fa fa-angle-left"></i> خانوادگی</a></li>
-                            <li><a title="کودکان" href="<?php echo Pi::url($this->url('home')); ?>/event/children"><i class="fa fa-angle-left"></i> کودکان</a></li>
+                            <li><a title="انفرادی" href="<?php echo Pi::url($this->url('home')); ?>/event"><i class="fa fa-angle-left"></i> انفرادی</a></li>
+                            <li><a title="دوستانه" href="<?php echo Pi::url($this->url('home')); ?>/event"><i class="fa fa-angle-left"></i> دوستانه</a></li>
+                            <li><a title="خانوادگی" href="<?php echo Pi::url($this->url('home')); ?>/event"><i class="fa fa-angle-left"></i> خانوادگی</a></li>
+                            <li><a title="کودکان" href="<?php echo Pi::url($this->url('home')); ?>/event"><i class="fa fa-angle-left"></i> کودکان</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <h3>سایر بخش ها</h3>
                         <ul class="list-unstyled">
-                            <li><a title="تورها و بلیط ها" href="#"><i class="fa fa-angle-left"></i> تورها و بلیط ها</a></li>
-                            <li><a title="درباره ما" href="#"><i class="fa fa-angle-left"></i> درباره ما</a></li>
-                            <li><a title="تماس با ما" href="#"><i class="fa fa-angle-left"></i> تماس با ما</a></li>
-                            <li><a title="قوانین و مقررات" href="#"><i class="fa fa-angle-left"></i> قوانین و مقررات</a></li>
-                            <li><a title="راهنمای خرید و ارسال" href="#"><i class="fa fa-angle-left"></i> راهنمای خرید و ارسال</a></li>
+                            <li><a title="تورها و بلیط ها" href="https://www.agama.ir/event"><i class="fa fa-angle-left"></i> تورها و سفر ها</a></li>
+                            <li><a title="درباره ما" href="https://www.agama.ir/page/about-us"><i class="fa fa-angle-left"></i> درباره ما</a></li>
+                            <li><a title="تماس با ما" href="https://www.agama.ir/contact"><i class="fa fa-angle-left"></i> تماس با ما</a></li>
+                            <li><a title="قوانین و مقررات" href="https://www.agama.ir/page/terms-and-conditions"><i class="fa fa-angle-left"></i> قوانین و مقررات</a></li>
+                            <li><a title="راهنمای خرید تور" href="#"><i class="fa fa-angle-left"></i> راهنمای خرید تور</a></li>
                         </ul>
                     </div>
                 </div>
