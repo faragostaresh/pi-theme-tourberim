@@ -431,20 +431,40 @@ form .icon-question-sign {
     text-shadow: none;
 }
 
-.pi-header-body-category .thumbnail {
+.pi-header .pi-header-image {
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.pi-header .pi-header-image-box {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0,0,0, .5);
+    padding: 15px 0 25px 0;
+}
+
+.pi-header .pi-header-image-text {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.pi-header .pi-header-body-category .thumbnail {
     width: 20%;
     float: right;
     text-align: center;
 }
 
-.pi-header-body-category .thumbnail,
-.pi-header-body-category .thumbnail img {
+.pi-header .pi-header-body-category .thumbnail,
+.pi-header .pi-header-body-category .thumbnail img {
     padding: 0;
     border: 0;
     margin: 0;
 }
 
-.pi-header-body-category .thumbnail .caption {
+.pi-header .pi-header-body-category .thumbnail .caption {
     position: relative;
     height: 40px;
     line-height: 10px;
@@ -454,7 +474,7 @@ form .icon-question-sign {
     text-align: center;
 }
 
-.pi-header-body-category .thumbnail .caption h3 {
+.pi-header .pi-header-body-category .thumbnail .caption h3 {
     position: absolute;
     padding: 0;
     margin: 0;
@@ -462,7 +482,7 @@ form .icon-question-sign {
     text-align: center;
 }
 
-.pi-header-body-category .thumbnail .caption h3 a {
+.pi-header .pi-header-body-category .thumbnail .caption h3 a {
     color: #fff;
 }
 

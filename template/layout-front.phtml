@@ -101,16 +101,6 @@ $breadcrumbs = $this->breadcrumb(
 </head>
 <body id="pi-<?php echo $module; ?>" class="pi-locale-<?php echo $locale; ?>">
 <header class="pi-header">
-    <div class="pi-header-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-
-                </div>
-
-            </div>
-        </div>
-    </div>
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="row">
@@ -157,7 +147,62 @@ $breadcrumbs = $this->breadcrumb(
     </div>
     <div class="pi-header-body">
         <?php if ($module == 'system') { ?>
-            <?php echo $this->widget('widget-highlights'); ?>
+            <div class="clearfix pi-header-image">
+                <div class="pi-header-image-box">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="pi-header-image-text">
+                            <p>جستجو بین تور ها و سفر ها</p>
+                        </div>
+                        <form class="form-inline" method="get" action="#">
+                            <div class="form-group">
+                                <label>عنوان</label>
+                                <input name="title" type="text" class="form-control header-search-title" placeholder="عنوان تور">
+                            </div>
+                            <div class="form-group">
+                                <label>تاریخ تور</label>
+                                <select class="form-control header-search-time" name="time">
+                                    <option value="">همه</option>
+                                    <option value="thisWeek">این هفته</option>
+                                    <option value="nextWeek">هفته آینده</option>
+                                    <option value="thisMonth">این ماه</option>
+                                    <option value="nextMonth">ماه آینده</option>
+                                    <option value="nextTwoMonth">دو ماه آینده</option>
+                                    <option value="nextThreeMonth">سه ماه آینده</option>
+                                     <option value="expired">باطل شده</option>
+                                    <option value="active">فعال</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>شاخه</label>
+                                <select class="form-control header-search-category" name="category">
+                                    <option value="">همه</option>
+                                    <option value="category-3-news">تاریخی</option>
+                                    <option value="category-7-news">رصد</option>
+                                    <option value="category-5-news">صحرانوردی</option>
+                                    <option value="category-2-news">طبیعت گردی</option>
+                                    <option value="category-6-news">عکاسی</option>
+                                    <option value="category-8-news">ماجراجویی</option>
+                                    <option value="category-4-news">کوهنوردی</option>
+                                </select>
+                            </div>
+                            <a class="btn btn-default header-search">یافتن تور</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="pi-header-image-image">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source data-srcset="<?php echo $this->assetTheme('image/header-mobi-ete.jpg'); ?>" media="(max-width: 320px)" srcset="<?php echo $this->assetTheme('image/header-mobi-ete.jpg'); ?>">
+                        <source data-srcset="<?php echo $this->assetTheme('image/header-smart-ete.jpg'); ?>" media="(max-width: 480px)" srcset="<?php echo $this->assetTheme('image/header-smart-ete.jpg'); ?>">
+                        <source data-srcset="<?php echo $this->assetTheme('image/header-tab-ete.jpg'); ?>" media="(max-width: 768px)" srcset="<?php echo $this->assetTheme('image/header-tab-ete.jpg'); ?>">
+                        <source data-srcset="<?php echo $this->assetTheme('image/header-lap-ete.jpg'); ?>" media="(max-width: 1366px)" srcset="<?php echo $this->assetTheme('image/header-lap-ete.jpg'); ?>">
+                        <source data-srcset="<?php echo $this->assetTheme('image/header-xlap-ete.jpg'); ?>" media="(max-width: 1920px)" srcset="<?php echo $this->assetTheme('image/header-xlap-ete.jpg'); ?>">
+                        <source data-srcset="<?php echo $this->assetTheme('image/header-desk-ete.jpg'); ?>" media="(max-width: 2880px)" srcset="<?php echo $this->assetTheme('image/header-desk-ete.jpg'); ?>">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img class="home-banner img-responsive lazyloaded" data-src="<?php echo $this->assetTheme('image/header-xlap-ete.jpg'); ?>" alt="<?php echo _escape($sitename); ?>" src="<?php echo $this->assetTheme('image/header-xlap-ete.jpg'); ?>">
+                    </picture>
+                </div>
+            </div>
             <div class="pi-header-body-text">
                 <div class="container">
                     <div class="row">
@@ -180,59 +225,59 @@ $breadcrumbs = $this->breadcrumb(
                     </div>
                 </div>
             </div>
+            <div class="pi-header-body-category clearfix">
+                <div class="thumbnail">
+                    <a href="<?php echo Pi::url($this->url('home')); ?>/event/ecotourism" title="طبیعت گردی">
+                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/ecotourism.jpg'); ?>" alt="طبیعت گردی">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="<?php echo Pi::url($this->url('home')); ?>/event/ecotourism" title="طبیعت گردی">طبیعت گردی</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <a href="<?php echo Pi::url($this->url('home')); ?>/event/adventure" title="ماجراجویی">
+                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/adventure.jpg'); ?>" alt="ماجراجویی">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="<?php echo Pi::url($this->url('home')); ?>/event/adventure" title="ماجراجویی">ماجراجویی</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <a href="<?php echo Pi::url($this->url('home')); ?>/event/mountaineering" title="کوهنوردی">
+                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/mountaineering.jpg'); ?>" alt="کوهنوردی">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="<?php echo Pi::url($this->url('home')); ?>/event/mountaineering" title="کوهنوردی">کوهنوردی</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <a href="<?php echo Pi::url($this->url('home')); ?>/event/cross-country" title="صحرانوردی">
+                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/cross-country.jpg'); ?>" alt="صحرانوردی">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="<?php echo Pi::url($this->url('home')); ?>/event/cross-country" title="کویرنوردی">کویرنوردی</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <a href="<?php echo Pi::url($this->url('home')); ?>/event/observation" title="رصد">
+                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/observation.jpg'); ?>" alt="رصد">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="<?php echo Pi::url($this->url('home')); ?>/event/observation" title="رصد">رصد</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
         <?php } ?>
-        <div class="pi-header-body-category clearfix">
-            <div class="thumbnail">
-                <a href="<?php echo Pi::url($this->url('home')); ?>/event/ecotourism" title="طبیعت گردی">
-                    <img class="img-responsive" src="<?php echo $this->assetTheme('image/ecotourism.jpg'); ?>" alt="طبیعت گردی">
-                </a>
-                <div class="caption">
-                    <h3>
-                        <a href="<?php echo Pi::url($this->url('home')); ?>/event/ecotourism" title="طبیعت گردی">طبیعت گردی</a>
-                    </h3>
-                </div>
-            </div>
-            <div class="thumbnail">
-                <a href="<?php echo Pi::url($this->url('home')); ?>/event/adventure" title="ماجراجویی">
-                    <img class="img-responsive" src="<?php echo $this->assetTheme('image/adventure.jpg'); ?>" alt="ماجراجویی">
-                </a>
-                <div class="caption">
-                    <h3>
-                        <a href="<?php echo Pi::url($this->url('home')); ?>/event/adventure" title="ماجراجویی">ماجراجویی</a>
-                    </h3>
-                </div>
-            </div>
-            <div class="thumbnail">
-                <a href="<?php echo Pi::url($this->url('home')); ?>/event/mountaineering" title="کوهنوردی">
-                    <img class="img-responsive" src="<?php echo $this->assetTheme('image/mountaineering.jpg'); ?>" alt="کوهنوردی">
-                </a>
-                <div class="caption">
-                    <h3>
-                        <a href="<?php echo Pi::url($this->url('home')); ?>/event/mountaineering" title="کوهنوردی">کوهنوردی</a>
-                    </h3>
-                </div>
-            </div>
-            <div class="thumbnail">
-                <a href="<?php echo Pi::url($this->url('home')); ?>/event/cross-country" title="صحرانوردی">
-                    <img class="img-responsive" src="<?php echo $this->assetTheme('image/cross-country.jpg'); ?>" alt="صحرانوردی">
-                </a>
-                <div class="caption">
-                    <h3>
-                        <a href="<?php echo Pi::url($this->url('home')); ?>/event/cross-country" title="کویرنوردی">کویرنوردی</a>
-                    </h3>
-                </div>
-            </div>
-            <div class="thumbnail">
-                <a href="<?php echo Pi::url($this->url('home')); ?>/event/observation" title="رصد">
-                    <img class="img-responsive" src="<?php echo $this->assetTheme('image/observation.jpg'); ?>" alt="رصد">
-                </a>
-                <div class="caption">
-                    <h3>
-                        <a href="<?php echo Pi::url($this->url('home')); ?>/event/observation" title="رصد">رصد</a>
-                    </h3>
-                </div>
-            </div>
-        </div>
     </div>
 </header>
 <section class="pi-section">
@@ -366,7 +411,7 @@ $breadcrumbs = $this->breadcrumb(
                 <div class="clearfix">
                     <div class="col-md-7 col-sm-6 col-xs-12">
                         <h2>درباره ما</h2>
-                        <p>وب سایت توربریم در زمستان ۱۳۹۴ و با هدف مرجعیت آنلاین برای معرفی و ثبت نام در انواع رویداد ها و تور های طبیعت گردی، تاریخی، کوهنوردی، رصد و عکاسی تاسیس شد.</p>
+                        <p>وب سایت <?php echo _escape($sitename); ?> در بهار ۱۳۹۶ و با هدف مرجعیت آنلاین برای معرفی و ثبت نام در انواع رویداد ها و تور های طبیعت گردی، تاریخی، کوهنوردی، رصد و عکاسی تاسیس شد.</p>
                     </div>
                     <div class="col-md-5 col-sm-6 col-xs-12">
                         <div class="pi-footer-social text-right">
