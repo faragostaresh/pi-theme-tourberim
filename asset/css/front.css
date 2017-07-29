@@ -457,6 +457,12 @@ form .icon-question-sign {
     text-align: center;
 }
 
+/* @media (max-width: 768px) {
+    .pi-header .pi-header-body-category .thumbnail {
+        width: 100%;
+    }
+} */
+
 .pi-header .pi-header-body-category .thumbnail,
 .pi-header .pi-header-body-category .thumbnail img {
     padding: 0;
